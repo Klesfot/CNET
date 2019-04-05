@@ -31,7 +31,8 @@ namespace HW2._1
             string visaPriceString = "34,23";//to float
             float visaPriceFloat = Convert.ToSingle(visaPriceString);//"34,23", convert
 
-            //string photoPriceString = "7.23";//to float
+            string photoPriceString = "7.23";//to float
+            float fPhotoPriceString = Convert.ToSingle(photoPriceString.Replace(".", ","));//"7,23", convert
 
             //3. BOOL CONVERSION
             bool hasFree2Pages = false;//to string, to char, to int
@@ -48,7 +49,7 @@ namespace HW2._1
             string sVisaPrice = Convert.ToString(visaPrice);//"60", convert
 
 
-            double fingerPrintsPrice = 55.2;//to int, to string. typo: in "finterPrintsPrice" :)
+            double fingerPrintsPrice = 55.2;//to int, to string
             int iFingerPrintsPrice = Convert.ToInt32(fingerPrintsPrice);//"55", convert
 
             string sFingerPrintsPrice = Convert.ToString(fingerPrintsPrice);//"55.2", convert
